@@ -1,0 +1,225 @@
+$icon-font-path: '../fonts/';
+$fa-font-path: "../fonts/";
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/font-awesome/scss/font-awesome.scss";
+// endbower
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600|Roboto');
+$mainFont: 'Roboto', sans-serif;
+$textFont: 'Open Sans', sans-serif;
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  //min-height: 900px;
+  
+}
+
+sup {
+	    top: -0.4em;
+}
+
+h1, h2, h3, h4, h5{
+	font-family: $mainFont;
+}
+
+p {
+	font-family: $textFont;
+}
+
+ul {
+	font-family: $textFont;
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+a {
+	font-family: $textFont;
+	color:black;
+	font-weight: bold;
+	transition: color 0.4s ease;
+}
+
+a p{
+	font-weight: normal;
+}
+
+a:hover{
+	color:#777777;
+	text-decoration: none;
+}
+a:focus{
+	text-decoration: none;
+}
+
+
+.row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.thumbnail {
+  height: 100%;
+  margin: 0px;
+}
+
+.thumbnail .caption {
+	transition: color 0.5s ease;
+	padding:2%;
+}
+
+.thumbnail .caption p{
+	color:black;
+}
+
+.thumbnail:hover .caption {
+	color:#777777;
+	text-decoration: none;
+	
+}
+
+[class*="col-"] {
+    margin-bottom: 15px;
+}
+
+.img-wrapper{
+	width: 100%;
+	padding-bottom: 100%; /* your aspect ratio here! */
+	position: relative;
+}
+
+.img-wrapper img{
+	position: absolute;
+	padding-top: 10%; 
+	//bottom: 0; 
+	left: 0; 
+	right: 0;
+	max-height: 100%; /* optional: if you want the smallest images to fill the .thumbnail */
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.footer i {
+	padding-right: .5em;
+}
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: white;
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+.headline {
+	color: #0fbfc2;
+	font-size:1.25em;
+}
+
+.small-jumbo {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+
+.content{
+	transition: all 0.2s ease;
+}
+
+#home_, ul{
+	padding-left:0px;
+}
+
+.flex{
+	display:flex;
+}
+
+.vertical-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.with-margin {
+  margin-bottom: 1em;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+	
+  .headline {
+	  font-size:24px;
+  }
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+	
+  .footer {
+  	margin-top: 1em;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
